@@ -19,16 +19,18 @@
 
 body {
     min-height: 100vh;
-    background: url('./images/pattern-background-desktop.svg') var(--pale-blue) no-repeat;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-color:  var(--pale-blue);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat:  no-repeat;;
+    background-size: contain;
 }
 
 main {
     max-width: min(85%, 25rem);
     text-align: center;
-    margin: auto;
     border-radius: 1em;
     background: var(--white);
 }
