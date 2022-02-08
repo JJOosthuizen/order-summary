@@ -1,0 +1,124 @@
+@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 500 1rem 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --white: hsl(255, 100%, 100%);
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    min-height: 100vh;
+    background: url('./images/pattern-background-desktop.svg') var(--pale-blue) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: min(85%, 25rem);
+    text-align: center;
+    margin: auto;
+    border-radius: 1em;
+    background: var(--white);
+}
+
+header > img {
+    width: 100%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.content {
+    margin: 3em;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 16px;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.container {
+    display: flex;
+    margin: 1.5em auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.container > img {
+    margin-right: 1em;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pricing span {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.container a {
+    text-decoration-line: underline;
+    color: var(--bright-blue);
+}
+
+.container a:hover {
+    color: var(--dark-blue);
+}
+
+.btn-proceed {
+    background-color: var(--bright-blue);
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 0.75em;
+    color: var(--white);
+    border: none;
+    box-shadow: 0 0.5em 0.5em var(--pale-blue);
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.btn-proceed:hover {
+    background-color: var(--pale-blue);
+    color: var(--dark-blue);
+    box-shadow: 0 0.5em 0.5em var(--dark-blue);
+}
+
+.btn-cancel {
+    background-color: var(--white);
+    border: none;
+    width: 100%;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    color: var(--dark-blue);
+}
